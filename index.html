@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div class="container">
+        <!--Titre-->
+        <h1>TodoList</h1>
+        <!--Creation nouvelle tache-->
+        <h2>Creer Nouvelle Tache</h2>
+        <label for="new">Nouvelle Tache</label>
+        <input type="new" type="text">
+        <button id="add">Ajouter</button>
+        <!--Liste des taches a faire-->
+        <h2>A Faire</h2>
+        <ul id="uncompleted">
+            <li>
+                <button class="check" type="checkbox"></button>
+                <label>Nom Tache</label>
+                <input type="text">
+                <button class="edit">Modifier</button>
+                <button class="Delete">Supprimer</button>
+            </li>
+            <li class="EditTask">
+                <button class="check" type="checkbox"></button>
+                <label>Nom Tache</label>
+                <input type="text" value="Nom Tache">
+                <button class="edit">Modifier</button>
+                <button class="Delete">Supprimer</button>
+            </li>
+        </ul>
+        <!--Liste des taches terminé-->
+        <h2>Terminé</h2>
+        <ul id="completedTask">
+            <li>
+                <button class="check" type="checkbox" checked></button>
+                <label>Nom Tache</label>
+                <input type="text">
+                <button class="edit">Modifier</button>
+                <button class="Delete">Supprimer</button>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+</html>
