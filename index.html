@@ -10,41 +10,15 @@
 <body>
     <div class="container">
         <!--Titre-->
-        <h1>TodoList</h1>
+        <h1>Todo List</h1>
         <!--Creation nouvelle tache-->
         <h2>Creer Nouvelle Tache</h2>
-        <label for="new">Nouvelle Tache</label>
-        <input type="new" type="text">
-        <button id="add">Ajouter</button>
-        <!--Liste des taches a faire-->
-        <h2>A Faire</h2>
-        <ul id="uncompleted">
-            <li>
-                <button class="check" type="checkbox"></button>
-                <label>Nom Tache</label>
-                <input type="text">
-                <button class="edit">Modifier</button>
-                <button class="Delete">Supprimer</button>
-            </li>
-            <li class="EditTask">
-                <button class="check" type="checkbox"></button>
-                <label>Nom Tache</label>
-                <input type="text" value="Nom Tache">
-                <button class="edit">Modifier</button>
-                <button class="Delete">Supprimer</button>
-            </li>
-        </ul>
-        <!--Liste des taches terminé-->
-        <h2>Terminé</h2>
-        <ul id="completedTask">
-            <li>
-                <button class="check" type="checkbox" checked></button>
-                <label>Nom Tache</label>
-                <input type="text">
-                <button class="edit">Modifier</button>
-                <button class="Delete">Supprimer</button>
-            </li>
-        </ul>
+        <input type="text" placeholder="Nom Tache" class="todo_input">
+        <button id="add" type="submit">Ajouter</button>
+        <!--Liste des taches-->
+        <div class="todo_container">
+            <ul class="todo_list"></ul>
+        </div>
         
     </div>
 </body>
