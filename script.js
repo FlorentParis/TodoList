@@ -1,7 +1,34 @@
-//selecting DOM Elements:
-var input = document.querySelector("input[type = 'test']");
-var checkbox = document.querySelector("input[type = 'checkbox']");
-var buttonsModif = document.querySelector("button[class='edit']");
-var buttonsDelete = document.querySelector("button[class='Delete']");
-var buttonsAdd = document.getElementById('add');
+const form = document.getElementById('form');
+const input = document.getElementById('input');
+const todoList = document.getElementById('todoList');
+const checked = document.getElementsByClassName("checked");
 
+console.log(checked);
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const todo = input.value;
+
+    if(todo){
+        const todoElement = document.createElement("li");
+        todoElement.innerHTML = todo;
+        todoList.appendChild(todoElement);
+
+        todoElement.addEventListener('click', () => {
+            if(todoElement.classList.contains("checked")){
+                todoElement.classList.remove("checked");
+            }else{
+                todoElement.classList.add("checked");
+            }
+        });
+
+        todoElement.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+
+            todoElement.remove();
+        });
+
+        input.value = '';
+    }
+});

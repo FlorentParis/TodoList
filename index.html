@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>TodoList</title>
 </head>
 <body>
-    <div class="container">
-        <!--Titre-->
-        <h1>Todo List</h1>
-        <!--Creation nouvelle tache-->
-        <h2>Creer Nouvelle Tache</h2>
-        <input type="text" placeholder="Nom Tache" class="todo_input">
-        <button id="add" type="submit">Ajouter</button>
-        <!--Liste des taches-->
-        <div class="todo_container">
-            <ul class="todo_list"></ul>
-        </div>
-        
-    </div>
+    <h1>Todo List</h1>
+    <form id="form">
+        <input type="text" placeholder="Write here your todo" id="input" autocomplete="off"/>
+        <ul id="todoList">
+        </ul>
+    </form>
+    <p>Left click to check.</p>
+    <p>Right click to delete.</p>
 </body>
 </html>
